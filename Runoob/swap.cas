@@ -1,0 +1,27 @@
+using System;
+
+namespace Test
+{
+    class NumberManipulator
+    {
+        public void swap(int x,int y)
+        {
+            int temp;
+            temp = x;
+            x = y;
+            y = temp;
+        }
+
+        public static void Main(string[] args)
+        {
+            NumberManipulator n = new NumberManipulator();
+            int a = 10;
+            int b = 20;
+            Console.WriteLine("在交换前，a的值：{0}",a);
+            Console.WriteLine("在交换前，b的值：{0}",b);
+            n.swap(a,b);
+            Console.WriteLine("在交换后，a的值：{0}",a);
+            Console.WriteLine("在交换后，b的值：{0}",b);
+        }
+    }
+}
